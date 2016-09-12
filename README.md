@@ -7,6 +7,7 @@
 ###Basic inserts and gets
 
       INS Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key :: Value
+      INS Prime Bucket >> Secondary Bucket >> Tertiary Bucket
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key :: Value
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> {PAT}
@@ -39,6 +40,10 @@
 ###Capabilities
 
       {PAT} Given a regex {PAT} for Key XOR Value, find match.
+
+###Restrictions
+
+      Must be >= 1 Buckets for data. 
 
 ###Examples
 
