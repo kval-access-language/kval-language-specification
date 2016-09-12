@@ -44,6 +44,7 @@
 ###Restrictions
 
       Must be >= 1 Buckets for data. 
+      {PAT} is not a valid option for an INS query.
 
 ###Examples
 
