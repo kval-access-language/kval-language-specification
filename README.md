@@ -18,6 +18,7 @@
       DEL Prime Bucket >> Secondary Bucket >> Tertiary Bucket
       DEL Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key
       DEL Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key :: _
+      DEL Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> _      
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key => Key
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket => Third Bucket
 
