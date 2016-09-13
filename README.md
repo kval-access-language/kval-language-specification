@@ -58,6 +58,7 @@
       Get value for K1:                               GET A >>>> K1
       Add value for K1:                               INS A >>>> K1 :: V1
       Delete K1 value:                                DEL A >>>> K1 :: _
+      Delete Values for Keys in Bucket A              DEL A >>>> _
       
       Delete A:                                       DEL A
       Delete B:                                       DEL A >> B
