@@ -66,3 +66,25 @@
       Rename K1:                                      REN A >>>> K1 => K2
       Rename B:                                       REN A >>>> B => C
       
+###Recommendations
+
+Idomatic methods for working with KVAL and storing date.  
+
+####Data: 
+
+Data should be stored as Base64 and for those wanting to retrieve it, it helps to mark it up, like in the following example:
+
+    INS Data Bucket >>>> Data Key :: data:image/png:base64:<base64 encoded data>
+    
+We can break this down and see the following information in our simple encoding:
+
+    data: # let's us know we have a data blob
+    image/png: # mimetype to help users decode the information
+    base64: # letting us know the data is stored in the db as base64
+    <based 64 encoded data>: # the encoded data portion
+    
+Therefore we can describe the following needed elements to encode data blobs:
+
+    data:<mimetype>:<encoding type>:<encoded data>
+    
+You can see how this is implemented in our BoltDB reference implementation: https://github.com/kval-access-language/kval-boltdb
