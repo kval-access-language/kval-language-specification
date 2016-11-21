@@ -10,6 +10,7 @@
       INS Prime Bucket >> Secondary Bucket >> Tertiary Bucket
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key :: Value
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key
+      GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> {PAT}
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> _ :: Value
       GET Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> _ :: {PAT}
