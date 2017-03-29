@@ -2,9 +2,9 @@
 
 *Grammar* for accessing K,V databases with a bit more ease. First binding intended to be for Golang's BoltDB. 
 
-##Operations:
+## Operations:
 
-###Basic inserts and gets
+### Basic inserts and gets
 
       INS Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key :: Value
       INS Prime Bucket >> Secondary Bucket >> Tertiary Bucket
@@ -23,7 +23,7 @@
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key => Key
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket => Third Bucket
 
-###Functions
+### Functions
 
       INS   Insert
       GET   Get values
@@ -31,7 +31,7 @@
       DEL   Delete
       REN   Rename
 
-###Operators
+### Operators
 
       >>    Bucket:Bucket relationship
       >>>>  Bucket:Key relationship
@@ -39,16 +39,16 @@
       =>    Name assignment
       _     Nil
 
-###Capabilities
+### Capabilities
 
       {PAT} Given a regex {PAT} for Key XOR Value, find match.
 
-###Restrictions
+### Restrictions
 
       Must be >= 1 Buckets for data. 
       {PAT} is not a valid option for an INS query.
 
-###Examples
+### Examples
 
       Bucket B exists inside Bucket A:                A >> B  
       Check existence of Bucket B inside Bucket A:    LIS A >> B              [Return: True]
@@ -67,11 +67,11 @@
       Rename K1:                                      REN A >>>> K1 => K2
       Rename B:                                       REN A >>>> B => C
       
-###Recommendations
+### Recommendations
 
 Idomatic methods for working with KVAL and storing date.  
 
-####Data: 
+#### Data: 
 
 Data should be stored as Base64 and for those wanting to retrieve it, it helps to mark it up, like in the following example:
 
