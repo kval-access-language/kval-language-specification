@@ -22,6 +22,7 @@
       DEL Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> _      
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket >>>> Key => Key
       REN Prime Bucket >> Secondary Bucket >> Tertiary Bucket => Third Bucket
+      GET _
 
 ### Functions
 
@@ -37,7 +38,7 @@
       >>>>  Bucket:Key relationship
       ::    Key::Value releationship
       =>    Name assignment
-      _     Nil
+      _     Wildcard
 
 ### Capabilities
 
@@ -53,7 +54,8 @@
       Bucket B exists inside Bucket A:                A >> B  
       Check existence of Bucket B inside Bucket A:    LIS A >> B              [Return: True]
       Get key value pairs in B:                       GET A >> B
-                                        
+      Get Primary Bucket Contents                     GET _
+
       Key K1 exists inside Bucket A:                  A >>>> K1
       Check K1 exists inside Bucket A:                LIS A >>>> K1
       Get value for K1:                               GET A >>>> K1
