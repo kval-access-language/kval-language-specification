@@ -54,7 +54,7 @@
       Bucket B exists inside Bucket A:                A >> B  
       Check existence of Bucket B inside Bucket A:    LIS A >> B              [Return: True]
       Get key value pairs in B:                       GET A >> B
-      Get Primary Bucket Contents                     GET _
+      Get Root Bucket Contents                     GET _
 
       Key K1 exists inside Bucket A:                  A >>>> K1
       Check K1 exists inside Bucket A:                LIS A >>>> K1
