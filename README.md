@@ -90,4 +90,4 @@ Therefore we can describe the following needed elements to encode data blobs:
 
     data:<mimetype>:<encoding type>:<encoded data>
     
-You can see how this is implemented in our BoltDB reference implementation: https://github.com/kval-access-language/kval-boltdb
+You can see how this is implemented in our BoltDB reference implementation: https://github.com/kval-access-language/kval-bbolt
