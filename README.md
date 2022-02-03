@@ -54,7 +54,7 @@
       Bucket B exists inside Bucket A:                A >> B  
       Check existence of Bucket B inside Bucket A:    LIS A >> B              [Return: True]
       Get key value pairs in B:                       GET A >> B
-      Get Root Bucket Contents                     GET _
+      Get Root Bucket Contents                        GET _
 
       Key K1 exists inside Bucket A:                  A >>>> K1
       Check K1 exists inside Bucket A:                LIS A >>>> K1
@@ -81,9 +81,9 @@ Data should be stored as Base64 and for those wanting to retrieve it, it helps t
     
 We can break this down and see the following information in our simple encoding:
 
-    data: # let's us know we have a data blob
-    image/png: # mimetype to help users decode the information
-    base64: # letting us know the data is stored in the db as base64
+    data:                    # let's us know we have a data blob
+    image/png:               # mimetype to help users decode the information
+    base64:                  # letting us know the data is stored in the db as base64
     <based 64 encoded data>: # the encoded data portion
     
 Therefore we can describe the following needed elements to encode data blobs:
